@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Next Toppers</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .gradient-bg {
+      background: linear-gradient(135deg, #4f46e5, #22d3ee);
+    }
+  </style>
+  <body>
+  <div>
+  <nav class="bg-white shadow-lg animate__animated animate__fadeIn">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+        <div class="flex items-center space-x-4">
+            <!-- Logo -->
+            <img class="w-[45px] rounded-[17px]"   src="data:image/png;base64,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" alt="Next Topper Logo" class="h-10 w-10">
+
+
+            <span class="text-lg font-bold text-[rgb(53 214 175)] next">Next Topper</span>
+        </div>
+        <div class="hidden md:flex space-x-6">
+            <a href="#" class="text-gray-700 font-medium hover:text-blue-700">Home</a>
+            <a href="#" class="text-gray-700 font-medium hover:text-blue-700">Classes</a>
+            <a href="#" class="text-gray-700 font-medium hover:text-blue-700">Plans</a>
+            <a href="#" class="text-gray-700 font-medium hover:text-blue-700">About Us</a>
+        </div>
+        
+    </div>
+</nav>
+</div>
+</head>
+<div class="gradient-bg h-screen flex items-center justify-center">
+    
+
+  <div class="bg-white rounded-lg shadow-lg w-full max-w-md p-8">
+    <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Login</h2>
+    <p class="text-center text-gray-500 mb-4">Sign in to access your account</p>
+
+    <form id="loginForm" class="space-y-6">
+      <div>
+        <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" class="w-full mt-1 p-3 border rounded-lg focus:ring focus:ring-indigo-200 focus:border-indigo-500" required />
+      </div>
+
+      <div>
+        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" class="w-full mt-1 p-3 border rounded-lg focus:ring focus:ring-indigo-200 focus:border-indigo-500" required />
+      </div>
+
+      <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400">Login</button>
+    </form>
+
+    <p id="error" class="text-center text-red-500 mt-4 hidden">Invalid username or password!</p>
+
+    <footer class="mt-6 text-center text-gray-500 text-sm">
+      &copy; 2024 Next Toppers. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    // Hardcoded credentials
+    const validUsername = "nexttopper";
+    const validPassword = "password123";
+
+    document.getElementById('loginForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      if (username === validUsername && password === validPassword) {
+        // alert('Login successful! Redirecting to the dashboard...');
+        localStorage.setItem("authenticated", "true");
+        window.location.href = "dashboard.html"; // Redirect to the main page or dashboard
+      } else {
+        document.getElementById('error').classList.remove('hidden');
+      }
+    });
+  </script>
+</div>
+
+  
+</body>
+</html>

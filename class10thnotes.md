@@ -1,0 +1,1 @@
+this is class 10th notes

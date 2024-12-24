@@ -1,0 +1,454 @@
+Python Programming (BCA3003T) 
+Unit I Introduction to Python: Python variables, Python basic Operators, Understanding python blocks. 
+Python Data Types, Declaring and using Numeric data types: int, float etc.  
+Unit-1 
+Introduction- 
+Python is a widely used general-purpose, high-level programming language. It was created 
+by Guido van Rossum in 1991 and further developed by the Python Software Foundation. It 
+was designed with an emphasis on code readability, and its syntax allows programmers to 
+express their concepts in fewer lines of code. It is used for:  
+• web development (server-side), 
+• software development, 
+• mathematics, 
+• system scripting. 
+Why Python? 
+• Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc). 
+• Python has a simple syntax like the English language. 
+• Python has syntax that allows developers to write programs with fewer lines than 
+some other programming languages. 
+• Python runs on an interpreter system, meaning that code can be executed as soon 
+as it is written. This means that prototyping can be very quick. 
+• Python can be treated in a procedural way, an object-oriented way or a functional 
+way. 
+Python Feature- 
+1. Simple and Easy to Learn: Python has a simple syntax, which makes it easy to 
+learn and read. It's a great language for beginners who are new to programming. 
+2. Interpreted: Python is an interpreted language, which means that the Python code 
+is executed line by line. This makes it easy to test and debug code. 
+3. High-Level: Python is a high-level language, which means that it abstracts away 
+low-level details like memory management and hardware interaction. This makes it 
+easier to write and understand code. 
+4. Dynamic Typing: Python is dynamically typed, which means that you don't need to 
+declare the data type of a variable explicitly. Python will automatically infer the data 
+type based on the value assigned to the variable. 
+5. Strong Typing: Python is strongly typed, which means that the data type of a 
+variable is enforced at runtime. This helps prevent errors and makes the code more 
+robust. 
+6. Extensive Standard Library: Python comes with a large standard library that 
+provides tools and modules for various tasks, such as file I/O, networking, and 
+more. This makes it easy to build complex applications without having to write 
+everything from scratch. 
+7. Cross-Platform: Python is a cross-platform language, which means that Python 
+code can run on different operating systems without modification. This makes it 
+easy to develop and deploy Python applications on different platforms. 
+8. Community and Ecosystem: Python has a large and active community, which 
+contributes to its ecosystem. There are many third-party libraries and frameworks 
+available for various purposes, making Python a versatile language for many 
+applications. 
+9. Versatile: Python is a versatile language that can be used for various purposes, 
+including web development, data science, artificial intelligence, game 
+development, and more. 
+Python Install- 
+Before starting this Python course first, you need to install Python on your computer. To 
+install Python on your computer, follow these steps: 
+1. Download Python: Go to the official Python website at https://www.python.org/. On 
+the homepage, you will see a "Downloads" section. Click on the "Download Python" 
+button. 
+2. Choose the Version: You will be directed to a page where you can choose the 
+version of Python you want to download. Python usually has two main versions 
+available: Python 3. Python 3 is the recommended version. Click on the appropriate 
+version for your operating system (Windows, macOS, or Linux). 
+3. Add Python to PATH (Optional): On Windows, you may be given the option to add 
+Python to your system's PATH environment variable. This makes it easier to run 
+Python from the command line. If you're not sure, it's usually safe to select this 
+option. 
+4. Install Python: Click the "Install Now" button to begin the installation. The installer 
+will copy the necessary files to your computer. 
+5. Verify the Installation: After the installation is complete, you can verify that Python 
+was installed correctly by opening a command prompt (on Windows) or a terminal 
+(on macOS or Linux) and typing python --version. This should display the version of 
+Python you installed. 
+Python Syntax - 
+>>> print("Hello, World!") 
+The Python Command Line 
+To test a short amount of code in python sometimes it is quickest and easiest not to write the code 
+in a file. This is made possible because Python can be run as a command line itself.  
+C:\Users\Your Name>python 
+Or, if the "python" command did not work, you can try "py": 
+C:\Users\Your Name>py 
+>>> print("Hello, World!")  
+Hello, World! 
+exit() 
+Python Comments- Comments can be used to explain Python code. Comments can be used 
+to make the code more readable.Comments can be used to prevent execution when testing code. 
+Comments starts with a #, and Python will ignore them: 
+#This is a comment 
+print("Hello, World!") 
+Multiline Comments- 
+Python does not really have a syntax for multiline comments. To add a multiline comment you could 
+insert a # for each line: 
+#This is a comment 
+#written in 
+#more than just one line 
+print("Hello, World!") 
+Since Python will ignore string literals that are not assigned to a variable, you can add a multiline 
+string (triple quotes) in your code, and place your comment inside it: 
+Eg. 
+""" 
+This is a comment 
+written in 
+more than just one line 
+""" 
+print("Hello, World!") 
+Python Variables - Variables are containers for storing data values. Python has no command 
+for declaring a variable. A variable is created the moment you first assign a value to it. 
+x = 6 
+y = "Hello" 
+print(x) 
+print(y) 
+Casting 
+If you want to specify the data type of a variable, this can be done with casting. 
+x = str(3)    # x will be '3' 
+y = int(3)    # y will be 3 
+z = float(3)  # z will be 3.0 
+Get the Type 
+You can get the data type of a variable with the type() function. 
+x = 10 
+y = "hello" 
+print(type(x)) 
+print(type(y)) 
+Variable Names- 
+A variable can have a short name (like x and y) or a more descriptive name (age, carname, 
+total_volume). Rules for Python variables: 
+• A variable name must start with a letter or the underscore character 
+• A variable name cannot start with a number 
+• A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and 
+_ ) 
+• Variable names are case-sensitive (age, Age and AGE are three different variables) 
+• A variable name cannot be any of the Python keywords. 
+Python Variables - Assign Multiple Values 
+Python allows you to assign values to multiple variables in one line 
+x, y, z = "yellow", "red", "green" 
+print(x) 
+print(y) 
+print(z) 
+One Value to Multiple Variables- 
+And you can assign the same value to multiple variables in one line: 
+x = y = z = "India" 
+print(x) 
+print(y) 
+print(z) 
+Python Operators 
+Python operators are special symbols used to perform specific operations on one or more 
+operands. The variables, values, or expressions can be used as operands. For example, Python's 
+addition operator (+) is used to perform addition operations on two variables, values, or 
+expressions. 
+The following are some of the terms related to Python operators: 
+• Unary operators: Python operators that require one operand to perform a specific operation 
+are known as unary operators. 
+• Binary operators: Python operators that require two operands to perform a specific 
+operation are known as binary operators. 
+• Operands: Variables, values, or expressions that are used with the operator to perform a 
+specific operation. 
+Types of Python Operators 
+Python operators are categorized in the following categories – 
+• Arithmetic Operators 
+• Comparison (Relational) Operators 
+• Assignment Operators 
+• Logical Operators 
+• Bitwise Operators 
+• Membership Operators 
+• Identity Operators 
+Python Arithmetic Operators 
+Python Arithmetic operators are used to perform basic mathematical operations such as 
+addition, subtraction, multiplication, etc. 
+The following table contains all arithmetic operators with their symbols, names, and 
+examples (assume that the values of a and b are 10 and 20, respectively) 
+Example 
+a = 21 
+b = 10 
+c = 0 
+c = a + b 
+print ("a: {} b: {} a+b: {}".format(a,b,c)) 
+c = a - b 
+print ("a: {} b: {} a-b: {}".format(a,b,c) ) 
+c = a * b 
+print ("a: {} b: {} a*b: {}".format(a,b,c)) 
+c = a / b 
+print ("a: {} b: {} a/b: {}".format(a,b,c)) 
+c = a % b 
+print ("a: {} b: {} a%b: {}".format(a,b,c)) 
+a = 2 
+b = 3 
+c = a**b  
+print ("a: {} b: {} a**b: {}".format(a,b,c)) 
+a = 10 
+b = 5 
+c = a//b  
+print ("a: {} b: {} a//b: {}".format(a,b,c)) 
+output 
+a: 21 b: 10 a+b: 31 
+a: 21 b: 10 a-b: 11 
+a: 21 b: 10 a*b: 210 
+a: 21 b: 10 a/b: 2.1 
+a: 21 b: 10 a%b: 1 
+a: 2 b: 3 a**b: 8 
+a: 10 b: 5 a//b: 2 
+Python Comparison Operators 
+Python Comparison operators compare the values on either side of them and decide the relation among 
+them. They are also called Relational operators. 
+The following table contains all comparison operators with their symbols, names, and examples (assume that 
+the values of a and b are 10 and 20, respectively) − 
+Python Assignment Operators 
+Python Assignment operators are used to assign values to variables. Following is a table which shows all 
+Python assignment operators. 
+The following table contains all assignment operators with their symbols, names, and examples − 
+Python Bitwise Operators 
+Python Bitwise operator works on bits and performs bit by bit operation. These operators are used to compare binary 
+numbers. 
+The following table contains all bitwise operators with their symbols, names, and examples − 
+Output- 
+Python Logical Operators 
+Python logical operators are used to combine two or more conditions and check the final result. 
+There are following logical operators supported by Python language. Assume variable a holds 10 
+and variable b holds 20 then 
+The following table contains all logical operators with their symbols, names, and examples − 
+Python Membership Operators 
+Python's membership operators test for membership in a sequence, such as strings, lists, or tuples. 
+Output 
+Python Identity Operators 
+Python identity operators compare the memory locations of two objects. 
+Python Operators Precedence 
+Operators precedence decides the order of the evaluation in which an operator is evaluated. 
+Python operators have different levels of precedence. The following table contains the list of 
+operators having highest to lowest precedence – 
+The following table lists all operators from highest precedence to lowest. 
+Printing output is a fundamental part of programming, and Python offers several ways to 
+accomplish this task. we’ll explore five different ways to print in Python, from the basic ‘print’ 
+function to more advanced techniques. 
+1. Print with the ‘print’ function 
+The most basic way to print in Python is to use the ‘print’ function. This function takes one or more 
+arguments, which can be variables, strings, or any other data type. The ‘print’ function 
+automatically adds a new line character at the end of the output, so each subsequent print 
+statement starts on a new line. 
+# Example 1: Printing a string 
+print("Hello, World!") 
+# Output: Hello, World! 
+# Example 2: Printing a variable 
+x = 42 
+print(x) 
+# Output: 42 
+2. Print with string formatting 
+String formatting is a powerful technique that allows you to insert values into a string. In Python, 
+you can use the ‘%’ operator to format a string. This operator takes a string on the left side and one 
+or more values on the right side, separated by commas. 
+# Example 1: Printing a formatted string 
+name = "Jatin" 
+age = 25 
+print("%s is %d years old." % (name, age)) 
+# Output: Jatin is 25 years old. 
+# Example 2: Printing a formatted string with a floating-point value 
+price = 19.99 
+print("The price is $%.2f." % price) 
+# Output: The price is $19.99. 
+3. Print with the ‘str.format()’ method 
+The ‘str.format()’ method is a newer, more versatile way of formatting strings in Python. This method 
+allows you to insert values into a string using curly braces ‘{}’, and then pass those values as 
+arguments to the ‘format()’ method. 
+# Example 1: Printing a formatted string using 'str.format()' 
+name = "Rahul" 
+age = 30 
+print("{} is {} years old.".format(name, age)) 
+# Output: rahul is 30 years old. 
+# Example 2: Printing a formatted string with named arguments 
+product = "Python Course" 
+price = 99.99 
+print("{name} costs ${price:.2f}.".format(name=product, price=price)) 
+# Output: Python Course costs $99.99. 
+4. Print with the ‘f-string’ syntax 
+The ‘f-string’ syntax is a newer, even more, concise way of formatting strings in Python. This syntax 
+allows you to embed expressions directly into string literals, by prefixing the string with the letter ‘f’. 
+# Example 1: Printing an f-string 
+name = "Abhi" 
+age = 35 
+print(f"{name} is {age} years old.") 
+# Output: Abhi is 35 years old. 
+# Example 2: Printing an f-string with a formatted number 
+price = 29.95 
+tax_rate = 0.08 
+print(f"The total price is ${price * (1 + tax_rate):.2f}.") 
+# Output: The total price is $32.34. 
+5. Print to a file or a stream 
+In addition to printing to the console, you can also print to a file or a stream in Python. This can be 
+useful when you want to save the output for later analysis or to share with others. To do this, you 
+can use the ‘print’ function with the ‘file’ keyword argument. 
+# Example 1: Printing to a file 
+with open('output.txt', 'w') as f: 
+# Writing to the file using the print function 
+print("This line will be written to a file.", file=f) 
+# Example 2: Printing to a stream 
+import sys 
+print("This line will be written to a stream.", file=sys.stderr) 
+In the first example, we open a file named ‘output.txt’ in write mode using the ‘open’ function and 
+the ‘with’ statement. Then, we pass the ‘file’ argument to the ‘print’ function, which writes the 
+output to the file. In the second example, we use the ‘sys.stderr’ stream to print an error message, 
+which can be redirected to a file or a different output destination. 
+Conclusion 
+Printing output is an essential part of programming, and Python offers several ways to accomplish 
+this task. From the basic ‘print’ function to more advanced techniques such as string formatting, 
+‘str.format()’, and ‘f-strings’, you can choose the method that best suits your needs. Additionally, 
+printing to a file or a stream can be useful when you want to save the output for later analysis or to 
+share with others. 
+Understanding python blocks – 
+In Python, a block is a group of statements that are indented together. Blocks are used to define the 
+scope of variables and to control the flow of execution. 
+Python uses indentation to indicate a block of code. 
+The basic syntax of a block in Python is as follows: 
+Python 
+If condition: 
+#This is block of statement 
+#intented by four space 
+The statements in a block are executed as a unit. This means that if one statement in the 
+block raises an exception, the remaining statements in the block will not be executed. 
+Blocks are also used to define the scope of variables. The scope of a variable is the part of 
+the program where the variable is accessible. The scope of a variable in a block is limited to 
+the block itself. This means that a variable defined in a block cannot be accessed outside of 
+the block. 
+Here are some examples of Python blocks: 
+Python 
+def my_function(): 
+#This is block of statement  
+x=10 
+Print(x) 
+Eg.  
+if condition: 
+#This is another block of statement 
+#indented by four space 
+Y=20 
+Print(y) 
+In the first example, the function my_function() defines a block of statements. The statements in 
+the block are indented by four spaces. The variable x is defined in the block and is only accessible 
+within the block. 
+In the second example, the if statement defines a block of statements. The statements in the block 
+are indented by four spaces. The variable y is defined in the block and is only accessible within the 
+block. 
+#Python will give you an error if you skip the indentation: 
+#The number of spaces is up to you as a programmer, the most common use is four, but it has to be 
+at least one. 
+You have to use the same number of spaces in the same block of code, otherwise Python will give you an error: 
+if 5 > 2: 
+print("Five is greater than two!") 
+print("Five is greater than two!")  #error 
+Here are some of the rules for Python block syntax: 
+• Blocks must be indented by four spaces. 
+• Statements in a block must be indented by the same amount of space. 
+• The scope of a variable in a block is limited to the block itself. 
+Python Data Types 
+Python data types are actually classes, and the defined variables are their instances or objects. 
+Since Python is dynamically typed, the data type of a variable is determined at runtime based on 
+the assigned value. 
+In general, the data types are used to define the type of a variable. It represents the type of data 
+we are going to store in a variable and determines what operations can be done on it. 
+Each programming language has its own classification of data items. With these datatypes, we 
+can store different types of data values. 
+Types of Data Types in Python 
+Python supports the following built-in data types – 
+• Numeric Data Types 
+o int 
+o float 
+o complex  
+• String Data Types 
+• Sequence Data Types 
+o List a=[10,20,30] 
+o Tuple b=(20,30,40) 
+o Range  eg. for i in range(10) 
+• Binary Data Types 
+o bytes 
+o bytearray 
+o memoryview 
+• Dictionary Data Type 
+• Dic=(“a”,10,”b”,20,”c”,30) 
+• Set Data Type 
+o set 
+o frozenset 
+• Boolean Data Type 
+• None Type 
+1.Python Numeric Data Types- Python numeric data types store numeric 
+values. Number objects are created when you assign a value to them. For example − 
+Python supports four different numerical types and each of them have built-in classes in 
+Python library, called int, bool, float and complex respectively – 
+• int (signed integers) 
+• float (floating point real values) 
+• complex (complex numbers) 
+A complex number is made up of two parts - real and imaginary. They are separated by '+' or '-' 
+signs. The imaginary part is suffixed by 'j' which is the imaginary number. The square root of -1 
+(√−1), is defined as imaginary number. Complex number in Python is represented as x+yj, where x is 
+the real part, and y is the imaginary part. So, 5+6j is a complex number. 
+Example of Numeric Data Types 
+Following is an example to show the usage of Integer, Float and Complex numbers: 
+Provide User Input in Python 
+In this chapter, we will learn how Python accepts the user input from the console, and 
+displays the output on the same console. 
+Every computer application should have a provision to accept input from the user when it is 
+running. This makes the application interactive. Depending on how it is developed, an 
+application may accept the user input in the form of text entered in the console (sys.stdin), 
+a graphical layout, or a web-based interface. 
+Python User Input Functions 
+Python provides us with two built-in functions to read the input from the keyboard. 
+• The input () Function 
+• The raw_input () Function 
+Python interpreter works in interactive and scripted mode. While the interactive mode is 
+good for quick evaluations, it is less productive. For repeated execution of same set of 
+instructions, scripted mode should be used. 
+Let us write a simple Python script to start with. 
+Output- Hello My name is Mohit 
+I am from Jaipur 
+The program simply prints the values of the two variables in it. If you run the program 
+repeatedly, the same output will be displayed every time. To use the program for another 
+name and city, you can edit the code, change name to say "Mohit" and city to "Jaipur". Every 
+time you need to assign different value, you will have to edit the program, save and run, 
+which is not the ideal way. 
+The input() Function 
+Obviously, you need some mechanism to assign different value to the variable in the 
+runtime − while the program is running. Python's input() function does the same job. 
+Following is the syntax of Python's standard library input() function. 
+>>> var=input() 
+When the interpreter encounters input() function, it waits for the user to enter data from the 
+standard input stream (keyboard) till the Enter key is pressed. The sequence of characters 
+may be stored in a string variable for further use. 
+On reading the Enter key, the program proceeds to the next statement. Let use change our 
+program to store the user input in name and city variables. 
+name = input() 
+city = input() 
+print ("Hello My name is", name) 
+print ("I am from ", city) 
+When you run, you will find the cursor waiting for user's input. Enter values for name and 
+city. Using the entered data, the output will be displayed. 
+Ravi 
+kota 
+Hello My name is Ravi 
+I am from kota 
+Now, the variables are not assigned any specific value in the program. Every time you run, 
+different values can be input. So, your program has become truly interactive. 
+Inside the input() function, you may give a prompt text, which will appear before the cursor 
+when you run the code. 
+name = input("Enter your name : ") 
+city = input("Enter your city : ") 
+print ("Hello My name is", name) 
+print ("I am from ", city) 
+When you run the program displays the prompt message, basically helping the user what to 
+enter. 
+Enter your name: Amit Gupta 
+Enter your city: Delhi 
+Hello My name is Amit Gupta 
+I am from Delhi 
+Taking Numeric Input in Python 
+You can combine the input and type cast statements in one – 
+width = int(input("Enter width : ")) 
+height = int(input("Enter height : ")) 
+area = width*height 
+print ("Area of rectangle = ", area) 
+output 
+Enter width: 20 
+Enter height: 30 
+Area of rectangle = 600 
